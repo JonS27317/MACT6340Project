@@ -14,6 +14,27 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-div {
-    border: 1px solid red;
+/* div {
+    border: 1px solid red; */
+}
+.container {
+  position: relative; /* Parent must be relative */
+  width: 100%;
+  /* height: 500px; */
+}
+
+.back-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Pushes image behind other elements */
+  object-fit: cover;
+}
+
+.front-text {
+  position: relative;
+  z-index: 1; /* Ensures text stays in front */
+  text-align: center;
 }
