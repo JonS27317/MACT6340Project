@@ -19,6 +19,8 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
   <script type="module" src="./js/index.js"></script>
+
+  <!-- header section that remains anchored to the top of the page -->
   <header class="p-0 text-bg-dark fixed-top">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -26,12 +28,11 @@
           <img class="d-flex align-items-center mb-2 bm-lg-0 mt-2 mt-lg-0" src="./images/NFT_Abstract.png"
             alt="Website Icon" width="40" height="32">
         </a>
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <ul class="nav col-12 col-lg-auto me-lg-auto ms-3 mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
-          <li><a href="#Featured-project" class="nav-link px-2 text-secondary">Featured Project</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">Projects</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">FAQs</a></li>
+          <li><a href="#Featured-Project" class="nav-link px-2 text-secondary">Featured Project</a></li>
+          <li><a href="#Project-Gallery" class="nav-link px-2 text-secondary">Projects</a></li>
+          <li><a href="#Artist-About" class="nav-link px-2 text-secondary">About</a></li>
 
         </ul>
         <div class="text-end">
@@ -42,9 +43,13 @@
   </header>
 
 
-
-  <div id="Featured-Project" class="row justify-content-center mx-auto">
-    <div class="col-6 justify-content-center card bg-dark text-white">
+  <!-- featured project with image background -->
+  <div id="Featured-Project" class="row justify-content-center mt-4 mx-auto h-100">
+    <div class="col-6 
+      justify-content-center 
+      card 
+      bg-dark 
+      text-white">
       <img src="./images/jacobs_ladder.png" class="card-img" alt="Background" width="50%" style="opacity:40%">
       <div class="card-img-overlay">
         <div class="row align-items-center">
@@ -63,7 +68,8 @@
           <p class="lead mb-4 text-light-gray">
             Cillum dolore consequat est occaecat ea irure commodo cupidatat deserunt occaecat fugiat sit. Ut esse
             pariatur
-            sunt excepteur tempor incididunt deserunt id. In eiusmod cupidatat non nulla dolor sint in do ad consequat
+            sunt excepteur tempor incididunt deserunt id. In eiusmod cupidatat non nulla dolor sint in do ad
+            consequat
             minim proident laborum. Anim elit velit eu aliqua exercitation ipsum ipsum cillum et. Est consequat elit
             duis
             nostrud.
@@ -79,9 +85,220 @@
       </div>
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
-      <p class="col-md-4 mb-0 text-body-secondary">
-        &copy; 2025 Company, Inc
+
+    <!--Project Gallery section-->
+    <section id="Project-Gallery" class="py-5 text-center container mx-0">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light text-white">NFT Project Gallery</h1>
+          <p class="lead text-body-secondary text-white">
+            Voluptate minim sit enim proident proident voluptate aliqua eiusmod consectetur.
+          </p>
+          <!-- Navigation buttons, not needed currently -->
+          <!-- <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225"
+                preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#872979"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">
+                  Project Picture
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Aliquip culpa nulla in quis tempor exercitation cillum. Minim cillum officia sunt occaecat duis
+                  eiusmod cillum ad anim elit culpa cupidatat nulla.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225"
+                preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#872979"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">
+                  Project Picture
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Aliquip culpa nulla in quis tempor exercitation cillum. Minim cillum officia sunt occaecat duis
+                  eiusmod cillum ad anim elit culpa cupidatat nulla.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225"
+                preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#872979"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">
+                  Project Picture
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Aliquip culpa nulla in quis tempor exercitation cillum. Minim cillum officia sunt occaecat duis
+                  eiusmod cillum ad anim elit culpa cupidatat nulla.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extra modified container for this project
+           <div class="col">
+            <div class="card shadow-sm">
+              <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225"
+                preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#872979"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle">
+                  Project Picture
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Aliquip culpa nulla in quis tempor exercitation cillum. Minim cillum officia sunt occaecat duis eiusmod cillum ad anim elit culpa cupidatat nulla. 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+          <!-- Extra container for future use (original)-->
+          <!-- <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  aria-label="Placeholder: Thumbnail"
+                  class="bd-placeholder-img card-img-top"
+                  height="225"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!--About the Artist Section-->
+    <div id="Artist-About" class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 h-100">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./images/JJSAudio_Profile.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            width="200" height="200" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-white lh-1 mb-3 ">
+            About the Artist
+          </h1>
+          <p class="lead text-white">
+            Reprehenderit nostrud ea nulla enim voluptate voluptate esse aliquip incididunt sit tempor. In id anim nulla
+            elit labore. Cupidatat mollit laborum pariatur occaecat do elit aliqua irure occaecat est. Mollit ad ipsum
+            laboris mollit ad velit quis velit sint ea reprehenderit excepteur excepteur. Consectetur non minim aute
+            commodo duis deserunt eiusmod ullamco ex occaecat ex exercitation. Aliqua in eiusmod adipisicing enim esse
+            nostrud ex nostrud.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Contact the Artist
+            </button>
+            <!-- <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Default
+              </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary text-secondary">
+        &copy; 2026 JJSAudio, Inc
       </p>
       <div class="col-4 justify-content-center">
         <div class="row justify-content-center">
@@ -91,7 +308,7 @@
           </div>
         </div>
         <div class="row-12">
-          <div class="col-12 text-center text-body-secondary">
+          <div class="col-12 text-center text-secondary">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </div>
         </div>
@@ -101,16 +318,10 @@
           <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          <a href="#Project-Gallery" class="nav-link px-2 text-body-secondary">Projects</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          <a href="#Artist-About" class="nav-link px-2 text-body-secondary">About</a>
         </li>
       </ul>
     </footer>

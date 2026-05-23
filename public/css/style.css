@@ -14,8 +14,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-/* div {
-    border: 1px solid red; */
+/* add borders to div for testing, set border to 1px */
+div {
+    border: 0px solid red;
 }
 .container {
   position: relative; /* Parent must be relative */
