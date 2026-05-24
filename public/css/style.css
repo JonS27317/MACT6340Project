@@ -1,7 +1,8 @@
-body{
-    background-color:black;
-    
+body {
+    background-color: black;
+
 }
+
 button {
     background-color: teal;
     color: white;
@@ -11,31 +12,38 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+
 /* add borders to div for testing, set border to 1px */
 div {
-    border: 0px solid red;
+    border: 1px solid red;
 }
+
 .container {
-  position: relative; /* Parent must be relative */
-  width: 100%;
-  /* height: 500px; */
+    position: relative;
+    /* Parent must be relative */
+    width: 100%;
+    /* height: 500px; */
 }
 
 .back-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Pushes image behind other elements */
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Pushes image behind other elements */
+    object-fit: cover;
 }
 
 .front-text {
-  position: relative;
-  z-index: 1; /* Ensures text stays in front */
-  text-align: center;
+    position: relative;
+    z-index: 1;
+    /* Ensures text stays in front */
+    text-align: center;
 }
