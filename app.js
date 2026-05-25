@@ -1,6 +1,17 @@
+
 import express from 'express';
+// import { Constants } from "./src/constants.mjs";
 const app = express();
+
 const port = 3000;
+
+// const limiter:rateLimitRequestHandler = rateLimit(passedOptions: {
+//     windowMs: Constants.millisPerSecond * Constants.secondsPerMinute,
+//     limit: Constants.requestsLimit,
+//     standardHeaders: 'draft-8',
+//     legacyHeaders: false,
+//     ipv6Subnet: 56
+// });
 
 app.use(express.static('public'));
 
