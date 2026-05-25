@@ -23,7 +23,7 @@
         console.log("You Clicked the Submit Button");
         let obj = {
             sub: "Someone submitted a contact form!",
-            txt: `${document.querySelector("#first-name").value} ${document.querySelector("#middle-name").value} ${document.querySelector("#last-name").value}  sent you a message that reads 
+            txt: `${document.querySelector("#first-name").value} ${document.querySelector("#middle-name").value} ${document.querySelector("#last-name").value}  sent you a message that reads: 
             ${document.querySelector("#msg").value}.
             Their email address is 
             ${document.querySelector("#mail").value}
