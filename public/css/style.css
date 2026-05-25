@@ -26,7 +26,7 @@ html {
 
 /* add borders to div for testing, set border to 1px */
 div {
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .container {
