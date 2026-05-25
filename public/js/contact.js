@@ -21,14 +21,32 @@
 
     function sendTheEmail() {
         console.log("You Clicked the Submit Button");
-        let first = document.querySelector("#first-name").value;
-        let last = document.querySelector("#last-name").value;
-        let email = document.querySelector("#mail").value;
-        let message = document.querySelector("#msg").value;
-        console.log("First Name: " + first);
-        console.log("Last Name: " + last);
-        console.log("Email: " + email);
-        console.log("Message: " + message);
+        let obj = {
+            sub: "Someone submitted a contact form!",
+            txt: `${document.querySelector("#first-name").value} ${document.querySelector("#middle-name").value} ${document.querySelector("#last-name").value}  sent you a message that reads 
+            ${document.querySelector("#msg").value}.
+            Their email address is 
+            ${document.querySelector("#mail").value}
+            `,
+        };
+
+        fetch("/mail", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify(obj),
+        })
+            .then((r) => r.json())
+            .then((response) => {
+                document.querySelector("#contact-button-response").innerHTML =
+                    "response.result";
+            })
+            .then(() => {
+                setTimeout(() => {
+                    document.querySelector("#contact-button-response").innerHTML = "";
+                }, "5000");
+            });
     }
 
 })();

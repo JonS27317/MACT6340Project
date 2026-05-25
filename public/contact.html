@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./images/NFT_Abstract.png">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <title>Contact Me</title>
     <meta name="author" content="Jonathan J. Schroeder">
     <meta name="description" content="A page to contact the artist.">
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img class="d-flex align-items-center mb-2 bm-lg-0 mt-2 mt-lg-0" src="./images/NFT_Abstract.png"
+                    <img class="d-flex align-items-center mb-2 bm-lg-0 mt-2 mt-lg-0" src="./images/favicon.ico"
                         alt="Website Icon" width="40" height="32">
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto ms-3 mb-2 justify-content-center mb-md-0">
@@ -48,24 +48,42 @@
     <form id="contact-form" class="needs-validation" novalidate>
         <div class="row mx-5">
             <div class="col">
-                <input type="text" id="first-name" class="form-control" placeholder="First name" aria-label="First name"
-                    required>
+                <Label> First name:</Label>
+                <input type="text" id="first-name" class="form-control" aria-label="First name" required>
+                <div id="firstNameFeedback" class="invalid-feedback">
+                    Please Enter Your First Name
+                </div>
+            </div>
+            <div class="col-2">
+                <Label> Middle initial:</Label>
+                <input type="text" id="middle-name" class="form-control" aria-label="Middle Initial" required>
+                <div id="middleNameFeedback" class="invalid-feedback">
+                    Please Enter Your Middle Initial
+                </div>
             </div>
             <div class="col">
-                <input type="text" id="last-name" class="form-control" placeholder="Last name" aria-label="Last name"
-                    required>
+                <Label> Last name:</Label>
+                <input type="text" id="last-name" class="form-control" aria-label="Last name" required>
+                <div id="lastNameFeedback" class="invalid-feedback">
+                    Please Enter Your Last Name Name
+                </div>
             </div>
         </div>
         <div class="m-5">
-            <input type="email" id="mail" class="form-control" id="exampleInputEmail1" placeholder="Email Address"
-                aria-label="Email Address" required>
+            <Label> Email Address:</Label>
+            <input type="email" id="mail" class="form-control" id="exampleInputEmail1" aria-label="Email Address"
+                required>
             <div id="emailFeedback" class="invalid-feedback">
                 Format should be example@example.net
             </div>
 
         </div>
         <div class=" m-5">
-            <textarea class="form-control" id="msg" placeholder="Enter your message here:" rows="6" required></textarea>
+            <Label> Please Enter your Message or Question:</Label>
+            <textarea class="form-control" id="msg" rows="6" required></textarea>
+            <div id="messageFeedback" class="invalid-feedback">
+                Please Enter Your Question or Message
+            </div>
         </div>
         <button id="contact-form-button" type="submit" class=" mx-5 btn btn-primary">Submit</button>
     </form>

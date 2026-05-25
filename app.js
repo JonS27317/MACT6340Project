@@ -1,27 +1,28 @@
 
 import express from 'express';
-// import { Constants } from "./src/constants.mjs";
+import dotenv from "dotenv";
+import * as utils from "./utils/utils.js"
+dotenv.config();
+
 const app = express();
-
 const port = 3000;
-
-// const limiter:rateLimitRequestHandler = rateLimit(passedOptions: {
-//     windowMs: Constants.millisPerSecond * Constants.secondsPerMinute,
-//     limit: Constants.requestsLimit,
-//     standardHeaders: 'draft-8',
-//     legacyHeaders: false,
-//     ipv6Subnet: 56
-// });
-
+app.use(express.json());
 app.use(express.static('public'));
 
 // app.get('/', (req, res) => {
 //     res.send('hello world');
 // });
 
-// app.post("/mail", (req, res) => {
-//     console.log(`mail button clicked`);
-// });
+app.post("/mail", async (req, res) => {
+    await utils
+        .sendMessage(req.body.sub, req.body.txt)
+        .then(() => {
+            res.send({ result: "success" });
+        })
+        .catch(() => {
+            res.send({ result: "failure" });
+        });
+});
 
 
 app.listen(port, () => {
