@@ -40,7 +40,7 @@
             .then((r) => r.json())
             .then((response) => {
                 document.querySelector("#contact-button-response").innerHTML =
-                    "response.result";
+                    response.result;
             })
             .then(() => {
                 setTimeout(() => {
