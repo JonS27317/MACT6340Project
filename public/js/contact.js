@@ -4,7 +4,7 @@
     let form = document.querySelector('#contact-form');
 
     document
-        .querySelector("#contact-form-button")
+        .querySelector("#send-contact")
         .addEventListener("click", (event) => {
             event.preventDefault();
             event.stopPropagation();
@@ -30,6 +30,7 @@
             `,
         };
 
+
         fetch("/mail", {
             method: "POST",
             headers: {
@@ -48,5 +49,4 @@
                 }, "5000");
             });
     }
-
 })();
