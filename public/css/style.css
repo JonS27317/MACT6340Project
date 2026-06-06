@@ -1,26 +1,32 @@
-body {
-    background-color: black;
-
-}
-
-button {
-    background-color: teal;
-    color: white;
-}
-
-html {
-    box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
 
+body {
+    background-color: #1d3854;
+    font-family: audiowide;
+    color: #7C9885;
+}
+
+button {
+    background-color: teal;
+    color: white;
+    font-family: audiowide, Impact;
+}
+
+path {
+    fill: #7C9885;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 /* add borders to div for testing, set border to 1px */
 div {
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .container {
@@ -46,4 +52,21 @@ div {
     z-index: 1;
     /* Ensures text stays in front */
     text-align: center;
+}
+
+.area {
+    min-height: 1000px;
+}
+
+.spacer {
+    min-height: 75px;
+}
+
+#splash {
+    min-height: 800px;
+    background: url("../images/4_Gradient.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
