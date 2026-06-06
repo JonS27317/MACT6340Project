@@ -25,16 +25,21 @@
         <div class="spacer"></div>
 
         <div>Projects</div>
-        <% projectArray.forEach((item, index)=> { %>
-            <div>
-                <a href='/project/<%= index + 1 %>'>
-                    <%=item %>
-                </a>
-            </div>
-            <% }); %>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-                <%- include('footer'); %>
-                    <script type="module" src="./js/projects.js"></script>
+                <% projectArray.forEach((item, index)=> { %>
+                    <div class="col">
+                        <%- include('projectCard', {ident: item.id, image: item.img_url, name: item.project_name}); %>
+                    </div>
+                    <% }); %>
+
+            </div>
+        </div>
+
+
+        <%- include('footer'); %>
+            <script type="module" src="./js/projects.js"></script>
 </body>
 
 </html>
