@@ -19,7 +19,8 @@ app.get('/', async (req, res, next) => {
             //query the database for the project records
             projects = await db.getAllProjects();
             console.log(projects);  //print db data into the console
-            res.render("index.ejs", { projectArray: projects });
+            let featuredRand = Math.floor(Math.random() * projects.length);
+            res.render("index.ejs", { projectArray: projects, featuredProject: projects[featuredRand] });
         })
         .catch(next);
 });
@@ -30,7 +31,7 @@ app.get("/project/:id", (req, res) => {
     if (id > projects.length) {
         throw new Error("No project with that ID");
     }
-    res.render("project.ejs", { projectArray: projects, which: id });
+    res.render("project.ejs", { project: projects[id - 1], which: id });
 });
 
 app.get('/projects', async (req, res) => {

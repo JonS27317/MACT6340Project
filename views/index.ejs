@@ -39,8 +39,8 @@
 
     <!-- Featured project section with ejs-->
     <!-- let selectedProject = 0; -->
-    <%- include('featuredProjectCard', { name: projectArray[2].project_name, image: projectArray[2].img_url,
-      description: projectArray[2].project_description, ident: projectArray[2].id}); %>
+    <%- include('featuredProjectCard', { name: featuredProject.project_name, image: featuredProject.img_url,
+      description: featuredProject.project_description, ident: featuredProject.id}); %>
 
 
 

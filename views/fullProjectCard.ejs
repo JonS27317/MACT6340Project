@@ -1,4 +1,3 @@
-<!-- featured project with image background -->
 <div class="row justify-content-center">
     <div id="Featured-Project" class="row justify-content-center mt-4 mx-auto h-100">
         <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 
@@ -6,20 +5,32 @@
       card 
       bg-dark 
       ">
-            <img src="<%=image%>" class="card-img" alt="Background" width="50%" style="opacity:25%">
+            <img src="<%=image%>" class="card-img" alt="Background" width="90%" style="opacity:15%">
             <div class="card-img-overlay overflow-hidden">
-                <div class="row align-items-center">
+                <div class="row align-items-top">
                     <div class="col d-4">
-                        <img class="d-block mx-auto" src="<%=image%>" alt="" width="144" height="144" />
+                        <img class="d-block mx-auto" src="<%=image%>" alt="" width="100%" height="100%" />
                     </div>
-                    <div class="col align-items-center">
-                        <h2 class="display-5 
-              fw-bold 
-              text-light-gray 
-              justify-content-sm-center 
-              align-items-center">
-                            <%=name%>
-                        </h2>
+                    <div class="col align-items-start">
+                        <div class="row">
+                            <h2 class="display-5 
+                                    fw-bold 
+                                    text-light-gray 
+                                    justify-content-sm-center 
+                                    align-items-center">
+                                <%=name%>
+                            </h2>
+                        </div>
+                        <div class="row">quantity: <%=qty %>
+                        </div>
+                        <div class="row">price: <%=price %>
+                        </div>
+                        <div class="row">available: <%=open %>
+                        </div>
+                        <div class="row">royalty: <%=royalty %>
+                        </div>
+                        <div class="row">active: <%=active %>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-12 mx-auto">

@@ -21,11 +21,12 @@
 
     <%- include('header'); %>
         <div class="spacer"></div>
-
-        <div>Project Page for <%= which %>
         </div>
-        <%- include ('featuredProjectCard', { name: projectArray[2].project_name, image: projectArray[2].img_url,
-            description: projectArray[2].project_description, ident: projectArray[2].id}); %>
+        <%- include ('fullProjectCard', { name: project.project_name, image: project.img_url, qty: project.quantity,
+            price: project.price_eth, open: project.open_date_gmt, royalty: project.royalty_percent, active:
+            project.active, description: project.project_description, ident: project.id}); %>
+
+
             <div class="container-fluid">
                 <%- include('footer'); %>
             </div>
