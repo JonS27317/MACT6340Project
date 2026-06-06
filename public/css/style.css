@@ -29,6 +29,22 @@ div {
     border: 0px solid red;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .container {
     position: relative;
     /* Parent must be relative */
