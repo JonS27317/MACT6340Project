@@ -1,46 +1,43 @@
 <!-- featured project with image background -->
-<div class="row justify-content-center">
-    <div id="Featured-Project" class="row justify-content-center mt-4 mx-auto h-100">
-        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 
+
+<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 
       justify-content-center 
       card 
       bg-dark 
       ">
-            <img src=".<%=image%>" class="card-img" alt="Background" width="50%" style="opacity:25%">
-            <div class="card-img-overlay overflow-hidden">
-                <div class="row align-items-center">
-                    <div class="col d-4">
-                        <img class="d-block mx-auto" src="<%=image%>" alt="" width="144" height="144" />
-                    </div>
-                    <div class="col align-items-center">
-                        <h2 class="display-5 
+    <img src=".<%=image%>" class="card-img" alt="Background" width="50%" style="opacity:25%">
+    <div class="card-img-overlay overflow-hidden">
+        <div class="row align-items-center">
+            <div class="col d-4">
+                <img class="d-block mx-auto" src="<%=image%>" alt="" width="144" height="144" />
+            </div>
+            <div class="col align-items-center">
+                <h2 class="display-5 
               fw-bold 
               text-light-gray 
               justify-content-sm-center 
               align-items-center">
-                            <%=name%>
-                        </h2>
-                    </div>
+                    <%=name%>
+                </h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mx-auto">
+            <p class="lead mb-4 text-light-gray">
+                <%=description %>
+            </p>
+            <div class="row gap-2">
+                <div class="col d-sm-flex justify-content-sm-center ">
+                    <a href="/project/<%= ident %>">
+                        <button id="goToFeaturedProjectButton" type="button" class="btn btn-primary btn-lg">
+                            View Project</button>
+                    </a>
                 </div>
-                <div class="col-lg-12 mx-auto">
-                    <p class="lead mb-4 text-light-gray">
-                        <%=description %>
-                    </p>
-                    <div class="row gap-2">
-                        <div class="col d-sm-flex justify-content-sm-center ">
-                            <a href="/project/<%= ident %>">
-                                <button id="goToFeaturedProjectButton" type="button" class="btn btn-primary btn-lg">
-                                    View Project</button>
-                            </a>
-                        </div>
-                        <div class="col d-sm-flex justify-content-sm-center">
-                            <a href="./projects">
-                                <button type="button" class="btn btn-outline-secondary btn-lg">
-                                    View Project Gallery
-                                </button>
-                            </a>
-                        </div>
-                    </div>
+                <div class="col d-sm-flex justify-content-sm-center">
+                    <a href="./projects">
+                        <button type="button" class="btn btn-outline-secondary btn-lg">
+                            View Project Gallery
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
