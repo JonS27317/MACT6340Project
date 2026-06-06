@@ -24,12 +24,13 @@
 
         <div>Project Page for <%= which %>
         </div>
+        <%- include ('featuredProjectCard', { name: projectArray[2].project_name, image: projectArray[2].img_url,
+            description: projectArray[2].project_description, ident: projectArray[2].id}); %>
+            <div class="container-fluid">
+                <%- include('footer'); %>
+            </div>
 
-        <div class="container-fluid">
-            <%- include('footer'); %>
-        </div>
-
-        <script type="module" src="./js/index.js"></script>
+            <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
