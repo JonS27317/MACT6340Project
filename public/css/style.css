@@ -7,7 +7,7 @@
 body {
     background-color: #1d3854;
     font-family: audiowide;
-    color: #7C9885;
+    color: #BBC9C3;
 }
 
 button {
@@ -27,6 +27,11 @@ html {
 /* add borders to div for testing, set border to 1px */
 div {
     border: 0px solid red;
+}
+
+h3 {
+    color: #2a603b;
+    ;
 }
 
 @keyframes fadeInAnimation {
@@ -85,4 +90,8 @@ div {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.text-secondary {
+    color: #BBC9C3 !important;
 }
