@@ -1,11 +1,11 @@
 
 import express from 'express';
 import dotenv from "dotenv";
-import * as utils from "/Utils/utils.js"
+import * as utils from "./utils/utils.js"
 import cors from "cors";
 
 dotenv.config();
-import * as db from '/Utils/database.js';
+import * as db from './utils/database.js';
 let data = ["Project 1", "Project 2", "Project 3"];
 let projects = [];
 
