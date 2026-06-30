@@ -1,6 +1,7 @@
 
 import express from 'express';
 import dotenv from "dotenv";
+//this is why case is important
 import * as utils from "./Utils/utils.js"
 import cors from "cors";
 
