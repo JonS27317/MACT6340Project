@@ -1,17 +1,19 @@
 
 import express from 'express';
 import dotenv from "dotenv";
-import * as utils from "./utils/utils.js"
+import * as utils from "./Utils/utils.js"
 import cors from "cors";
 
 dotenv.config();
-import * as db from './utils/database.js';
+import * as db from './Utils/database.js';
 let data = ["Project 1", "Project 2", "Project 3"];
 let projects = [];
 
 const app = express();
 app.use(cors());
-const port = 3000;
+
+const port = process.env.port || 3000;
+
 app.set("view engine", "ejs")
 app.use(express.json());
 app.use(express.static('public'));
