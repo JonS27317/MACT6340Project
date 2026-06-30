@@ -2,18 +2,18 @@
 import express from 'express';
 import dotenv from "dotenv";
 //this is why case is important
-import * as utils from "./Utils/utils.js"
+import * as utils from "./utils/utils.js"
 import cors from "cors";
 
 dotenv.config();
-import * as db from './Utils/database.js';
+import * as db from './utils/database.js';
 let data = ["Project 1", "Project 2", "Project 3"];
 let projects = [];
 
 const app = express();
 app.use(cors());
 
-const port = process.env.port || 3000;
+const port = 3000;
 
 app.set("view engine", "ejs")
 app.use(express.json());
